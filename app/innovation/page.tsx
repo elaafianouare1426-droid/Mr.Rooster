@@ -65,6 +65,7 @@ const translations: Record<SupportedLang, Record<string, string>> = {
     stage2Desc: "نظام متكامل لإدارة الفقاسات والحاضنات من يوم الكتاكيت حتى الشهر الأول.",
     stage3Title: "03. صحة الكتاكيت",
     stage3Desc: "منصة ذكية لمراقبة صحة الكتاكيت واكتشاف الأمراض مبكراً باستخدام الذكاء الاصطناعي.",
+    discoverMore: "اكتشف المزيد", // ✅ إضافة مفتاح الترجمة للجوال
   },
   fr: {
     heroBadge: "Poultry 4.0 — La Révolution Agricole Numérique",
@@ -103,13 +104,14 @@ const translations: Record<SupportedLang, Record<string, string>> = {
     sec3Title: "Ingénierie environnementale durable",
     sec3Desc: "Inspiré des systèmes hydrauliques ancestraux, le système intègre un module d'humidité en circuit fermé.",
     visionTitle: "Notre vision : vers une ferme intelligente 100%",
-    visionDesc: "We are moving steadily toward building an integrated poultry ecosystem.",
+    visionDesc: "Nous avançons à pas sûrs vers la construction d'un écosystème avicole intégré, du contrôle intelligent à la gestion sanitaire complète.",
     stage1Title: "01. Le Contrôleur Intelligent",
     stage1Desc: "Un contrôleur environnemental intelligent qui gère l'élevage des poussins de 1 à 30 jours, réduisant automatiquement la température via une courbe dynamique pour maximiser le taux de survie.",
     stage2Title: "02. Rooster Platform",
     stage2Desc: "Système intégré pour gérer les couveuses et écloseries du poussin d'un jour au mois.",
     stage3Title: "03. Santé des Poussins",
     stage3Desc: "Plateforme intelligente pour surveiller la santé des poussins et détecter précocement les maladies.",
+    discoverMore: "En savoir plus", // ✅ الترجمة الفرنسية للجوال
   },
   en: {
     heroBadge: "Poultry 4.0 — The Digital Agricultural Revolution",
@@ -155,6 +157,7 @@ const translations: Record<SupportedLang, Record<string, string>> = {
     stage2Desc: "Integrated system to manage hatcheries and incubators from day-old chicks to one month old.",
     stage3Title: "03. Chick Health",
     stage3Desc: "Smart platform to monitor chick health and detect diseases early using artificial intelligence.",
+    discoverMore: "Discover more", // ✅ الترجمة الإنجليزية للجوال
   },
 };
 
@@ -280,37 +283,37 @@ export default function InnovationPage() {
       <Navbar />
 
       {/* ══════ HERO ══════ */}
-      <section className="relative pt-32 pb-24 px-6 overflow-hidden">
+      <section className="relative pt-24 sm:pt-32 pb-16 sm:pb-24 px-4 sm:px-6 overflow-hidden">
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div className="absolute top-20 left-10 w-72 h-72 bg-amber-500 rounded-full blur-[128px]" />
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-orange-600 rounded-full blur-[128px]" />
         </div>
         <div className="relative max-w-7xl mx-auto text-center">
-          <span className="inline-block px-5 py-2.5 bg-amber-500/15 border border-amber-500/30 rounded-full text-amber-400 text-sm font-semibold mb-8">
+          <span className="inline-block px-4 py-2 sm:px-5 sm:py-2.5 bg-amber-500/15 border border-amber-500/30 rounded-full text-amber-400 text-xs sm:text-sm font-semibold mb-6 sm:mb-8">
             {t.heroBadge}
           </span>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-8 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold mb-6 sm:mb-8 leading-tight">
             {t.heroTitle1}<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">
               {t.heroTitle2}
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto mb-12 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-4xl mx-auto mb-8 sm:mb-12 leading-relaxed px-2 sm:px-0">
             {t.heroDesc}
           </p>
           
-          {/* تم تعديل الحاوية هنا لتصبح flex-col على الهاتف و flex-row على الديسكتوب */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto sm:max-w-none">
+          {/* ✅ أزرار متجاوبة تماماً للجوال */}
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center max-w-xs sm:max-w-none mx-auto px-4 sm:px-0">
             <a 
               href="#discover" 
-              className="group w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 text-black font-bold rounded-xl hover:from-amber-400 hover:to-orange-400 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-amber-500/25"
+              className="group px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-amber-500 to-orange-500 text-black font-bold rounded-xl hover:from-amber-400 hover:to-orange-400 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-amber-500/25 text-sm sm:text-base"
             >
               {t.btnDiscover}
-              <ArrowRight className={`w-5 h-5 transition-transform ${isRTL ? 'rotate-180' : ''} group-hover:translate-x-1`} />
+              <ArrowRight className={`w-4 h-4 sm:w-5 sm:h-5 transition-transform ${isRTL ? 'rotate-180' : ''} group-hover:translate-x-1`} />
             </a>
             <a 
               href="#vision" 
-              className="w-full sm:w-auto px-8 py-4 border-2 border-amber-500/40 text-amber-400 rounded-xl hover:bg-amber-500/10 transition-all duration-300 font-semibold text-center"
+              className="px-6 py-3 sm:px-8 sm:py-4 border-2 border-amber-500/40 text-amber-400 rounded-xl hover:bg-amber-500/10 transition-all duration-300 font-semibold text-center text-sm sm:text-base"
             >
               {t.btnVision}
             </a>
@@ -321,77 +324,83 @@ export default function InnovationPage() {
       {/* ═══════════════════════════════════════════════════════ */}
       {/* SECTION: DISCOVER INNOVATION (2 بطاقات)           */}
       {/* ═══════════════════════════════════════════════════════ */}
-      <section id="discover" className="py-24 px-4 md:px-6">
+      <section id="discover" className="py-16 sm:py-24 px-3 sm:px-4 md:px-6">
         <div className="max-w-7xl mx-auto">
 
           {/* العنوان */}
-          <div className="text-center mb-20">
-            <span className="inline-block px-5 py-2.5 bg-amber-500/15 border border-amber-500/30 rounded-full text-amber-400 text-sm font-semibold mb-6">
+          <div className="text-center mb-12 sm:mb-20 px-2">
+            <span className="inline-block px-4 py-2 sm:px-5 sm:py-2.5 bg-amber-500/15 border border-amber-500/30 rounded-full text-amber-400 text-xs sm:text-sm font-semibold mb-4 sm:mb-6">
               {t.discoverBadge}
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4 sm:mb-6">
               {t.discoverTitle}
             </h2>
-            <p className="text-lg text-gray-400 max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg text-gray-400 max-w-3xl mx-auto px-2 sm:px-0">
               {t.discoverDesc}
             </p>
           </div>
 
-          {/* البطاقتان */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          {/* البطاقتان - ✅ تنسيق محسن للجوال */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
 
             {cards.map((card) => (
               <div
                 key={card.id}
                 onClick={() => setSelectedCard(card.id)}
-                className={`group relative bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden ${card.borderHover} transition-all duration-500 hover:shadow-2xl ${card.shadowHover} cursor-pointer`}
+                className={`group relative bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-2xl sm:rounded-3xl overflow-hidden ${card.borderHover} transition-all duration-500 hover:shadow-2xl ${card.shadowHover} cursor-pointer`}
               >
-                {/* صورة الجهاز */}
-                <div className={`relative h-56 sm:h-64 md:h-80 bg-gradient-to-br ${card.bgGradient} overflow-hidden flex items-center justify-center`}>
+                {/* صورة الجهاز - ✅ ارتفاع أصغر للجوال */}
+                <div className={`relative h-48 sm:h-56 md:h-80 bg-gradient-to-br ${card.bgGradient} overflow-hidden flex items-center justify-center`}>
                   <img
                     src={card.image}
                     alt={card.title}
-                    className="w-full h-full object-contain p-4 md:p-6 transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-contain p-3 sm:p-4 md:p-6 transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className={`absolute top-3 left-3 md:top-4 md:left-4 px-2 py-1 md:px-3 md:py-1.5 ${card.badgeColor} text-[10px] md:text-xs font-black rounded-lg`}>
+                  <div className={`absolute top-2 left-2 sm:top-3 sm:left-3 md:top-4 md:left-4 px-2 py-1 ${card.badgeColor} text-[10px] sm:text-xs font-black rounded-lg`}>
                     {card.badge}
                   </div>
                 </div>
 
-                {/* المحتوى المختصر */}
-                <div className="p-5 md:p-8">
-                  <div className="flex items-center gap-2 md:gap-3 mb-2 md:mb-4">
-                    <div className="w-10 h-10 md:w-12 md:h-12 bg-white/5 rounded-xl flex items-center justify-center shrink-0">
-                      <card.icon className={`w-5 h-5 md:w-6 md:h-6 ${card.iconColor}`} />
+                {/* المحتوى المختصر - ✅ padding أصغر للجوال */}
+                <div className="p-4 sm:p-5 md:p-8">
+                  <div className={`flex items-center gap-2 sm:gap-3 mb-2 sm:mb-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/5 rounded-xl flex items-center justify-center shrink-0">
+                      <card.icon className={`w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 ${card.iconColor}`} />
                     </div>
-                    <div>
-                      <h3 className="text-xl md:text-2xl font-extrabold text-white leading-tight">{card.title}</h3>
-                      <p className={`${card.iconColor} text-xs md:text-sm font-semibold hidden md:block`}>{card.subtitle}</p>
+                    <div className={isRTL ? 'text-right' : 'text-left'}>
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold text-white leading-tight">{card.title}</h3>
+                      <p className={`${card.iconColor} text-xs font-semibold hidden sm:block`}>{card.subtitle}</p>
                     </div>
                   </div>
 
-                  <p className="text-gray-400 leading-relaxed mb-4 md:mb-8 text-xs md:text-sm md:text-base hidden md:block line-clamp-3">
+                  {/* ✅ نص مختصر للجوال فقط (مخفي على الشاشات الكبيرة) */}
+                  <p className="text-gray-400 leading-relaxed mb-3 sm:mb-4 text-xs sm:text-sm md:text-base sm:hidden line-clamp-2">
+                    {card.desc.substring(0, 100)}...
+                  </p>
+
+                  <p className="text-gray-400 leading-relaxed mb-6 md:mb-8 text-sm md:text-base hidden md:block line-clamp-3">
                     {card.desc}
                   </p>
 
-                  <div className="space-y-2 md:space-y-4 hidden md:block">
+                  <div className="space-y-3 md:space-y-4 hidden md:block">
                     {card.features.map((feat, idx) => (
-                      <div key={idx} className="flex items-start gap-2 md:gap-3">
-                        <div className="w-6 h-6 md:w-8 md:h-8 bg-white/5 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+                      <div key={idx} className={`flex items-start gap-2 sm:gap-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                        <div className="w-6 h-6 sm:w-8 sm:h-8 bg-white/5 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
                           {(() => {
                             const IconComponent = card.featureIcons[idx];
-                            return <IconComponent className={`w-3 h-3 md:w-4 md:h-4 ${card.featureColors[idx]}`} />;
+                            return <IconComponent className={`w-3 h-3 sm:w-4 sm:h-4 ${card.featureColors[idx]}`} />;
                           })()}
                         </div>
-                        <p className="text-gray-300 text-xs md:text-sm leading-relaxed">{feat}</p>
+                        <p className="text-gray-300 text-xs sm:text-sm leading-relaxed flex-1">{feat}</p>
                       </div>
                     ))}
                   </div>
 
-                  <div className="md:hidden mt-4 pt-2 border-t border-zinc-800/50">
-                    <span className={`inline-flex items-center gap-1 text-sm font-bold ${card.iconColor}`}>
-                      اكتشف المزيد
-                      <ArrowRight className={`w-4 h-4 ${isRTL ? 'rotate-180' : ''}`} />
+                  {/* ✅ رابط اكتشف المزيد المترجم للجوال */}
+                  <div className="md:hidden mt-4 pt-3 border-t border-zinc-800/50">
+                    <span className={`inline-flex items-center gap-1 text-sm font-bold ${card.iconColor} ${isRTL ? 'flex-row-reverse' : ''}`}>
+                      {t.discoverMore} {/* ✅ استخدام الترجمة بدلاً من النص الثابت */}
+                      <ArrowRight className={`w-4 h-4 transition-transform ${isRTL ? 'rotate-180' : ''}`} />
                     </span>
                   </div>
                 </div>
@@ -402,7 +411,7 @@ export default function InnovationPage() {
         </div>
       </section>
 
-      {/* ══════ MODAL ══════ */}
+      {/* ═════= MODAL ═════= */}
       <AnimatePresence>
         {selectedCard && (() => {
           const card = cards.find(c => c.id === selectedCard)!;
@@ -412,58 +421,58 @@ export default function InnovationPage() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setSelectedCard(null)}
-              className="fixed inset-0 bg-black/90 backdrop-blur-xl z-[100] flex items-center justify-center p-4 md:p-6"
+              className="fixed inset-0 bg-black/90 backdrop-blur-xl z-[100] flex items-center justify-center p-3 sm:p-4 md:p-6"
             >
               <motion.div
                 initial={{ scale: 0.9, y: 50 }}
                 animate={{ scale: 1, y: 0 }}
                 exit={{ scale: 0.9, y: 50 }}
                 onClick={(e) => e.stopPropagation()}
-                className="bg-zinc-900 border border-zinc-700 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative"
+                className="bg-zinc-900 border border-zinc-700 rounded-2xl sm:rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative"
               >
                 <button
                   onClick={() => setSelectedCard(null)}
-                  className="absolute top-4 right-4 z-10 w-10 h-10 bg-black/50 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition"
+                  className={`absolute top-3 sm:top-4 ${isRTL ? 'left-3 sm:left-4' : 'right-3 sm:right-4'} z-10 w-8 h-8 sm:w-10 sm:h-10 bg-black/50 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition`}
                 >
-                  <X className="w-5 h-5" />
+                  <X className="w-4 h-4 sm:w-5 sm:h-5" />
                 </button>
 
-                <div className={`relative h-48 sm:h-64 bg-gradient-to-br ${card.bgGradient} flex items-center justify-center`}>
+                <div className={`relative h-40 sm:h-48 md:h-64 bg-gradient-to-br ${card.bgGradient} flex items-center justify-center`}>
                   <img
                     src={card.image}
                     alt={card.title}
-                    className="w-full h-full object-contain p-8"
+                    className="w-full h-full object-contain p-4 sm:p-8"
                   />
-                  <div className={`absolute top-4 left-4 px-3 py-1.5 ${card.badgeColor} text-xs font-black rounded-lg`}>
+                  <div className={`absolute top-3 left-3 sm:top-4 sm:left-4 px-2 sm:px-3 py-1 sm:py-1.5 ${card.badgeColor} text-[10px] sm:text-xs font-black rounded-lg`}>
                     {card.badge}
                   </div>
                 </div>
 
-                <div className="p-6 md:p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center">
-                      <card.icon className={`w-6 h-6 ${card.iconColor}`} />
+                <div className="p-4 sm:p-6 md:p-8">
+                  <div className={`flex items-center gap-3 mb-3 sm:mb-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white/5 rounded-xl flex items-center justify-center shrink-0">
+                      <card.icon className={`w-5 h-5 sm:w-6 sm:h-6 ${card.iconColor}`} />
                     </div>
-                    <div>
-                      <h3 className="text-2xl md:text-3xl font-extrabold text-white">{card.title}</h3>
-                      <p className={`${card.iconColor} text-sm font-semibold`}>{card.subtitle}</p>
+                    <div className={isRTL ? 'text-right' : 'text-left'}>
+                      <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white">{card.title}</h3>
+                      <p className={`${card.iconColor} text-xs sm:text-sm font-semibold`}>{card.subtitle}</p>
                     </div>
                   </div>
 
-                  <p className="text-gray-300 leading-relaxed mb-8 text-base md:text-lg">
+                  <p className="text-gray-300 leading-relaxed mb-6 sm:mb-8 text-sm sm:text-base md:text-lg text-justify sm:text-left">
                     {card.desc}
                   </p>
 
-                  <div className="space-y-4">
+                  <div className="space-y-3 sm:space-y-4">
                     {card.features.map((feat, idx) => (
-                      <div key={idx} className="flex items-start gap-3 bg-zinc-800/50 rounded-xl p-4">
-                        <div className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center shrink-0">
+                      <div key={idx} className={`flex items-start gap-2 sm:gap-3 bg-zinc-800/50 rounded-xl p-3 sm:p-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                        <div className="w-8 h-8 sm:w-10 sm:h-10 bg-white/5 rounded-lg flex items-center justify-center shrink-0">
                           {(() => {
                             const IconComponent = card.featureIcons[idx];
-                            return <IconComponent className={`w-5 h-5 ${card.featureColors[idx]}`} />;
+                            return <IconComponent className={`w-4 h-4 sm:w-5 sm:h-5 ${card.featureColors[idx]}`} />;
                           })()}
                         </div>
-                        <p className="text-gray-200 text-sm md:text-base leading-relaxed">{feat}</p>
+                        <p className="text-gray-200 text-xs sm:text-sm md:text-base leading-relaxed flex-1">{feat}</p>
                       </div>
                     ))}
                   </div>
@@ -474,60 +483,60 @@ export default function InnovationPage() {
         })()}
       </AnimatePresence>
 
-      {/* ══════ SECTION 3: SUSTAINABLE ══════ */}
-      <section className="py-24 px-6 bg-gradient-to-b from-black via-zinc-950 to-black">
-        <div className="max-w-5xl mx-auto text-center">
-          <div className="w-20 h-20 bg-cyan-500/10 rounded-2xl flex items-center justify-center mx-auto mb-8">
-            <Droplets className="w-10 h-10 text-cyan-500" />
+      {/* ═════= SECTION 3: SUSTAINABLE ═════= */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-b from-black via-zinc-950 to-black">
+        <div className="max-w-5xl mx-auto text-center px-2">
+          <div className="w-16 h-16 sm:w-20 sm:h-20 bg-cyan-500/10 rounded-2xl flex items-center justify-center mx-auto mb-6 sm:mb-8">
+            <Droplets className="w-8 h-8 sm:w-10 sm:h-10 text-cyan-500" />
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 sm:mb-8">
             {t.sec3Title}
           </h2>
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
             {t.sec3Desc}
           </p>
         </div>
       </section>
 
-      {/* ══════ TIMELINE ══════ */}
-      <section id="vision" className="py-24 px-6 relative overflow-hidden">
+      {/* ═════= TIMELINE ═════= */}
+      <section id="vision" className="py-16 sm:py-24 px-4 sm:px-6 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5 pointer-events-none">
           <div className="absolute top-0 left-1/2 w-96 h-96 bg-amber-500 rounded-full blur-[150px] -translate-x-1/2" />
         </div>
 
         <div className="max-w-6xl mx-auto relative">
-          <div className="text-center mb-20">
-            <div className="w-16 h-16 bg-amber-500/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
-              <Target className="w-8 h-8 text-amber-500" />
+          <div className="text-center mb-12 sm:mb-20 px-2">
+            <div className="w-12 h-12 sm:w-16 sm:h-16 bg-amber-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
+              <Target className="w-6 h-6 sm:w-8 sm:h-8 text-amber-500" />
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 sm:mb-6">
               {t.visionTitle}
             </h2>
-            <p className="text-lg text-gray-400 max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg text-gray-400 max-w-3xl mx-auto">
               {t.visionDesc}
             </p>
           </div>
 
           <div className="relative">
             <div className="hidden md:block absolute top-[2.25rem] left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-amber-500/40 to-transparent" />
-            <div className="md:hidden absolute top-0 bottom-0 right-8 w-0.5 bg-gradient-to-b from-transparent via-amber-500/40 to-transparent" />
+            <div className="md:hidden absolute top-0 bottom-0 right-4 sm:right-8 w-0.5 bg-gradient-to-b from-transparent via-amber-500/40 to-transparent" />
 
-            <div className="grid md:grid-cols-3 gap-12 md:gap-8">
+            <div className="grid md:grid-cols-3 gap-8 md:gap-8">
               {[
                 { icon: Cpu, title: t.stage1Title, desc: t.stage1Desc },
                 { icon: Cloud, title: t.stage2Title, desc: t.stage2Desc },
                 { icon: ShieldCheck, title: t.stage3Title, desc: t.stage3Desc },
               ].map((stage, i) => (
-                <div key={i} className="relative flex md:flex-col items-center gap-6 md:gap-0">
-                  <div className="absolute right-8 top-0 md:static md:mb-6 z-10">
-                    <div className="w-4 h-4 rounded-full bg-amber-500 border-4 border-black shadow-[0_0_0_4px_rgba(245,158,11,0.2)]" />
+                <div key={i} className="relative flex md:flex-col items-center gap-4 sm:gap-6 md:gap-0">
+                  <div className={`absolute right-4 sm:right-8 top-0 md:static md:mb-6 z-10 ${isRTL ? 'left-4 sm:left-8 right-auto' : ''}`}>
+                    <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-amber-500 border-2 sm:border-4 border-black shadow-[0_0_0_2px_rgba(245,158,11,0.2)] sm:shadow-[0_0_0_4px_rgba(245,158,11,0.2)]" />
                   </div>
-                  <div className="flex-1 md:text-center pr-16 md:pr-0">
-                    <div className="w-14 h-14 bg-amber-500/10 rounded-2xl flex items-center justify-center mb-4 md:mx-auto">
-                      <stage.icon className="w-7 h-7 text-amber-500" />
+                  <div className={`flex-1 md:text-center ${isRTL ? 'pr-12 sm:pr-16 pl-0 md:pr-0' : 'pr-12 sm:pr-16 md:pr-0'}`}>
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-amber-500/10 rounded-2xl flex items-center justify-center mb-3 sm:mb-4 md:mx-auto">
+                      <stage.icon className="w-6 h-6 sm:w-7 sm:h-7 text-amber-500" />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3">{stage.title}</h3>
-                    <p className="text-gray-400 text-sm leading-relaxed">{stage.desc}</p>
+                    <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">{stage.title}</h3>
+                    <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">{stage.desc}</p>
                   </div>
                 </div>
               ))}
@@ -536,8 +545,8 @@ export default function InnovationPage() {
         </div>
       </section>
 
-      {/* ══════ FOOTER ══════ */}
-      <footer className="border-t border-zinc-800 py-8 px-6 text-center text-gray-500 text-sm">
+      {/* ═════= FOOTER ═════= */}
+      <footer className="border-t border-zinc-800 py-6 sm:py-8 px-4 sm:px-6 text-center text-gray-500 text-xs sm:text-sm">
         © {new Date().getFullYear()} MR. ROOSTER — Poultry 4.0
       </footer>
     </div>
