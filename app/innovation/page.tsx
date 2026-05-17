@@ -129,7 +129,7 @@ const translations: Record<SupportedLang, Record<string, string>> = {
     eyeFeature1: "Smart emergency alerts via phone when temperature or humidity changes",
     eyeFeature2: "Smart protection against power outages and ventilation failures",
     eyeFeature3: "OLED screen for direct data display at the production site",
-    linkTitle: "Smart Brooder",
+    linkTitle: "Smart Controller",
     linkSubtitle: "Smart Controller",
     linkDesc: "An intelligent, standalone environmental control device designed to manage and care for chicks from day 1 to 30 days old. It features an Automated Temperature Curve system that gradually and precisely lowers the temperature daily (from 37°C in the early days to match the chick's weak immunity, down to 20°C when feather growth is complete on day 30). The system fully automates critical brooding factors (heating, cross-ventilation to prevent ammonia buildup, and humidity control), minimizing the mortality rate and ensuring healthy, uniform growth for pure breeds.",
     linkFeature1: "Automated temperature curve (37°C to 20°C) over 30 days",
