@@ -24,7 +24,7 @@ const translations: Record<SupportedLang, Record<string, string>> = {
   ar: {
     heroBadge: "Poultry 4.0 — الثورة الزراعية الرقمية",
     heroTitle1: "التكليس الذكي",
-    heroTitle2: "Rooster Eye & المربي الذكي", // ◀️ تم التعديل
+    heroTitle2: "Rooster Eye & Smart-Link",
     heroDesc: "نظام متكامل يعتمد على تكنولوجيا إنترنت الأشياء (IoT) المتقدمة لمراقبة وإدارة مناخ الفقاسات عن بُعد على مدار الساعة، لضمان أعلى نسب تفقيس للسلالات الحرة والنقية في المغرب.",
     btnDiscover: "اكتشف الإبتكار",
     btnVision: "نظرتنا للمستقبل",
@@ -37,13 +37,12 @@ const translations: Record<SupportedLang, Record<string, string>> = {
     eyeFeature1: "إشعارات الطوارئ الذكية عبر الهاتف عند تغير الحرارة أو الرطوبة",
     eyeFeature2: "حماية ذكية ضد انقطاع التيار وخلل التهوية",
     eyeFeature3: "شاشة OLED للعرض المباشر للبيانات في مكان الإنتاج",
-    linkTitle: "المربي الذكي", // ◀️ تم التعديل
-    linkSubtitle: "نظام التربية الذكي", // ◀️ تم التعديل
+    linkTitle: "Smart Brooder",
+    linkSubtitle: "تربية ذكية",
     linkDesc: "جهاز تحكم بيئي ذكي ومستقل، صُمم لإدارة ورعاية الكتاكيت من عمر يوم واحد وحتى 30 يوماً. يتميز الجهاز بنظام منحنى الحرارة التلقائي (Automated Temperature Curve)، حيث يقوم بخفض درجة الحرارة تدريجياً وبدقة متناهية يومياً (من 37°C في الأيام الأولى ليتلاءم مع ضعف مناعة الكتكوت، وصولاً إلى 20°C عند اكتمال نمو الريش في اليوم الثلاثين). يقوم النظام بأتمتة كاملة لعوامل التربية الحرجة (التدفئة، التهوية المتداخلة لمنع تراكم الأمونيا، وضبط الرطوبة)، مما يقلل من نسب النفوق (Mortality Rate) إلى أدنى حد ويضمن نمواً متناسقاً وصحياً للسلالات النقية.",
     linkFeature1: "منحنى حرارة تلقائي (37°C إلى 20°C) على مدى 30 يوماً",
     linkFeature2: "أتمتة كاملة للتدفئة والتهوية وضبط الرطوبة",
     linkFeature3: "تقليل نسب النفوق وضمان نمو صحي متناسق",
-    brooderBadge: "المربي الذكي", // ◀️ تم التعديل (إضافة مفتاح جديد)
     sec1Badge: "أجهزة IoT",
     sec1Title1: "جهاز ROOSTER EYE",
     sec1Title2: "العين الذكية داخل الفقاسة",
@@ -53,25 +52,25 @@ const translations: Record<SupportedLang, Record<string, string>> = {
     card2Title: "حماية ضد الطوارئ",
     card2Desc: "أنظمة أمان ذاتية للتعامل الفوري مع انقطاع التيار الكهربائي أو خلل التهوية.",
     sec2Badge: "تربية ذكية",
-    sec2Title1: "المربي الذكي", // ◀️ تم التعديل
+    sec2Title1: "Smart Brooder",
     sec2Title2: "نظام تربية الكتاكيت الذكي",
     sec2Desc: "جهاز تحكم بيئي ذكي لإدارة ورعاية الكتاكيت من اليوم الأول حتى اليوم الثلاثين.",
     sec3Title: "هندسة بيئية مستدامة",
     sec3Desc: "مستوحى من الأنظمة الهيدروليكية العريقة؛ يدمج النظام وحدة رطوبة ذكية تعتمد على إعادة تدوير المياه في حلقة مغلقة.",
     visionTitle: "رؤيتنا: نحو مزرعة ذكية 100%",
     visionDesc: "نخطو بثبات نحو بناء نظام بيئي متكامل للدواجن، يبدأ بالتحكم الذكي ويصل إلى إدارة صحية شاملة.",
-    stage1Title: "01. المربي الذكي", // ◀️ تم التعديل
+    stage1Title: "01. الجهاز الذكي",
     stage1Desc: "متحكم بيئي ذكي يدير رحلة نمو الكتكوت من عمر يوم إلى 30 يوماً بأتمتة كاملة، عبر خوارزمية ديناميكية تخفض الحرارة تلقائياً لتضمن أعلى معدلات البقاء والنمو.",
     stage2Title: "02. Rooster Platform",
     stage2Desc: "نظام متكامل لإدارة الفقاسات والحاضنات من يوم الكتاكيت حتى الشهر الأول.",
     stage3Title: "03. صحة الكتاكيت",
     stage3Desc: "منصة ذكية لمراقبة صحة الكتاكيت واكتشاف الأمراض مبكراً باستخدام الذكاء الاصطناعي.",
-    discoverMore: "اكتشف المزيد",
+    discoverMore: "اكتشف المزيد", // ✅ إضافة مفتاح الترجمة للجوال
   },
   fr: {
     heroBadge: "Poultry 4.0 — La Révolution Agricole Numérique",
     heroTitle1: "L'Incubation Intelligente",
-    heroTitle2: "Rooster Eye & L'Éleveur Intelligent", // ◀️ تم التعديل
+    heroTitle2: "Rooster Eye & Smart-Link",
     heroDesc: "Un système intégré basé sur une technologie IoT avancée pour surveiller et gérer à distance le climat des incubateurs 24h/24.",
     btnDiscover: "Découvrir l'innovation",
     btnVision: "Notre vision du futur",
@@ -84,13 +83,12 @@ const translations: Record<SupportedLang, Record<string, string>> = {
     eyeFeature1: "Alertes d'urgence intelligentes sur téléphone en cas de variation de température ou d'humidité",
     eyeFeature2: "Protection intelligente contre les pannes de courant et de ventilation",
     eyeFeature3: "Écran OLED pour l'affichage direct des données sur site",
-    linkTitle: "L'Éleveur Intelligent", // ◀️ تم التعديل
-    linkSubtitle: "Système d'élevage intelligent", // ◀️ تم التعديل
+    linkTitle: "Smart Brooder",
+    linkSubtitle: "Élevage intelligent",
     linkDesc: "Dispositif de contrôle environnemental intelligent et autonome, conçu pour gérer et prendre soin des poussins de 1 à 30 jours. Il dispose d'un système de courbe de température automatique (Automated Temperature Curve), réduisant progressivement et précisément la température chaque jour (de 37°C dans les premiers jours pour s'adapter à l'immunité faible du poussin, jusqu'à 20°C à la fin de la croissance des plumes au 30ème jour). Le système automatise complètement les facteurs d'élevage critiques (chauffage, ventilation croisée pour prévenir l'accumulation d'ammoniac, régulation de l'humidité), réduisant ainsi le taux de mortalité au minimum et assurant une croissance saine et uniforme.",
     linkFeature1: "Courbe de température automatique (37°C à 20°C) sur 30 jours",
     linkFeature2: "Automatisation complète du chauffage, ventilation et humidité",
     linkFeature3: "Réduction du taux de mortalité et croissance saine uniforme",
-    brooderBadge: "L'Éleveur Intelligent", // ◀️ تم التعديل (إضافة مفتاح جديد)
     sec1Badge: "Équipement IoT",
     sec1Title1: "Appareil ROOSTER EYE",
     sec1Title2: "L'œil intelligent dans l'incubateur",
@@ -100,25 +98,25 @@ const translations: Record<SupportedLang, Record<string, string>> = {
     card2Title: "Protection d'urgence",
     card2Desc: "Systèmes de sécurité autonomes pour réagir instantanément.",
     sec2Badge: "Élevage Intelligent",
-    sec2Title1: "L'Éleveur Intelligent", // ◀️ تم التعديل
+    sec2Title1: "Smart Brooder",
     sec2Title2: "Système d'élevage intelligent des poussins",
     sec2Desc: "Dispositif de contrôle environnemental intelligent pour l'élevage des poussins du premier jour au 30ème jour.",
     sec3Title: "Ingénierie environnementale durable",
     sec3Desc: "Inspiré des systèmes hydrauliques ancestraux, le système intègre un module d'humidité en circuit fermé.",
     visionTitle: "Notre vision : vers une ferme intelligente 100%",
     visionDesc: "Nous avançons à pas sûrs vers la construction d'un écosystème avicole intégré, du contrôle intelligent à la gestion sanitaire complète.",
-    stage1Title: "01. L'Éleveur Intelligent", // ◀️ تم التعديل
+    stage1Title: "01. Le Contrôleur Intelligent",
     stage1Desc: "Un contrôleur environnemental intelligent qui gère l'élevage des poussins de 1 à 30 jours, réduisant automatiquement la température via une courbe dynamique pour maximiser le taux de survie.",
     stage2Title: "02. Rooster Platform",
     stage2Desc: "Système intégré pour gérer les couveuses et écloseries du poussin d'un jour au mois.",
     stage3Title: "03. Santé des Poussins",
     stage3Desc: "Plateforme intelligente pour surveiller la santé des poussins et détecter précocement les maladies.",
-    discoverMore: "En savoir plus",
+    discoverMore: "En savoir plus", // ✅ الترجمة الفرنسية للجوال
   },
   en: {
     heroBadge: "Poultry 4.0 — The Digital Agricultural Revolution",
     heroTitle1: "Smart Incubation",
-    heroTitle2: "Rooster Eye & Smart Breeder", // ◀️ تم التعديل
+    heroTitle2: "Rooster Eye & Smart-Link",
     heroDesc: "A fully integrated system powered by advanced IoT technology for 24/7 remote monitoring and climate control of incubators.",
     btnDiscover: "Discover the Innovation",
     btnVision: "Our Vision for the Future",
@@ -131,13 +129,12 @@ const translations: Record<SupportedLang, Record<string, string>> = {
     eyeFeature1: "Smart emergency alerts via phone when temperature or humidity changes",
     eyeFeature2: "Smart protection against power outages and ventilation failures",
     eyeFeature3: "OLED screen for direct data display at the production site",
-    linkTitle: "Smart Breeder", // ◀️ تم التعديل
-    linkSubtitle: "Smart Brooding System", // ◀️ تم التعديل
+    linkTitle: "Smart Brooder",
+    linkSubtitle: "Smart Brooding",
     linkDesc: "An intelligent, standalone environmental control device designed to manage and care for chicks from day 1 to 30 days old. It features an Automated Temperature Curve system that gradually and precisely lowers the temperature daily (from 37°C in the early days to match the chick's weak immunity, down to 20°C when feather growth is complete on day 30). The system fully automates critical brooding factors (heating, cross-ventilation to prevent ammonia buildup, and humidity control), minimizing the mortality rate and ensuring healthy, uniform growth for pure breeds.",
     linkFeature1: "Automated temperature curve (37°C to 20°C) over 30 days",
     linkFeature2: "Full automation of heating, ventilation, and humidity",
     linkFeature3: "Minimized mortality rate and healthy uniform growth",
-    brooderBadge: "Smart Breeder", // ◀️ تم التعديل (إضافة مفتاح جديد)
     sec1Badge: "IoT Hardware",
     sec1Title1: "ROOSTER EYE Device",
     sec1Title2: "The Smart Eye Inside the Incubator",
@@ -147,20 +144,20 @@ const translations: Record<SupportedLang, Record<string, string>> = {
     card2Title: "Emergency Protection",
     card2Desc: "Autonomous safety systems for instant response.",
     sec2Badge: "Smart Brooding",
-    sec2Title1: "Smart Breeder", // ◀️ تم التعديل
+    sec2Title1: "Smart Controller",
     sec2Title2: "Smart Chick Brooding System",
     sec2Desc: "Intelligent environmental control device for raising chicks from day one to day thirty.",
     sec3Title: "Sustainable Environmental Engineering",
     sec3Desc: "Inspired by ancient hydraulic systems, our smart humidity module uses a closed-loop water recycling system.",
     visionTitle: "Our Vision: Toward a 100% Smart Farm",
     visionDesc: "We are steadily building an integrated poultry ecosystem, from smart control to comprehensive health management.",
-    stage1Title: "01. Smart Breeder", // ◀️ تم التعديل
+    stage1Title: "01. Smart Brooder",
     stage1Desc: "A smart environmental controller that automates chick brooding from day 1 to 30, dynamically lowering the temperature day by day to ensure maximum survival and optimal growth.",
     stage2Title: "02. Rooster Platform",
     stage2Desc: "Integrated system to manage hatcheries and incubators from day-old chicks to one month old.",
     stage3Title: "03. Chick Health",
     stage3Desc: "Smart platform to monitor chick health and detect diseases early using artificial intelligence.",
-    discoverMore: "Discover more",
+    discoverMore: "Discover more", // ✅ الترجمة الإنجليزية للجوال
   },
 };
 
@@ -250,7 +247,7 @@ export default function InnovationPage() {
       desc: t.eyeDesc,
       features: [t.eyeFeature1, t.eyeFeature2, t.eyeFeature3],
       icon: Eye,
-      badge: t.sec1Badge, // ◀️ تم التعديل (استخدام الترجمة)
+      badge: 'IoT Device',
       badgeColor: 'bg-amber-500 text-black',
       iconColor: 'text-amber-500',
       bgGradient: 'from-amber-900/20 to-orange-900/20',
@@ -267,7 +264,7 @@ export default function InnovationPage() {
       desc: t.linkDesc,
       features: [t.linkFeature1, t.linkFeature2, t.linkFeature3],
       icon: Cloud,
-      badge: t.brooderBadge, // ◀️ تم التعديل (استخدام الترجمة)
+      badge: 'Smart Brooder',
       badgeColor: 'bg-purple-500 text-white',
       iconColor: 'text-purple-500',
       bgGradient: 'from-purple-900/20 to-blue-900/20',
@@ -282,7 +279,6 @@ export default function InnovationPage() {
   return (
     <div dir={dir} lang={lang} className="min-h-screen bg-black text-white dark">
 
-      {/* ... باقي الكود يبقى كما هو ... */}
       {/* ══════ NAVBAR ══════ */}
       <Navbar />
 
@@ -306,6 +302,7 @@ export default function InnovationPage() {
             {t.heroDesc}
           </p>
           
+          {/* ✅ أزرار متجاوبة تماماً للجوال */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center max-w-xs sm:max-w-none mx-auto px-4 sm:px-0">
             <a 
               href="#discover" 
@@ -343,7 +340,7 @@ export default function InnovationPage() {
             </p>
           </div>
 
-          {/* البطاقتان */}
+          {/* البطاقتان - ✅ تنسيق محسن للجوال */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
 
             {cards.map((card) => (
@@ -352,6 +349,7 @@ export default function InnovationPage() {
                 onClick={() => setSelectedCard(card.id)}
                 className={`group relative bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800 rounded-2xl sm:rounded-3xl overflow-hidden ${card.borderHover} transition-all duration-500 hover:shadow-2xl ${card.shadowHover} cursor-pointer`}
               >
+                {/* صورة الجهاز - ✅ ارتفاع أصغر للجوال */}
                 <div className={`relative h-48 sm:h-56 md:h-80 bg-gradient-to-br ${card.bgGradient} overflow-hidden flex items-center justify-center`}>
                   <img
                     src={card.image}
@@ -363,6 +361,7 @@ export default function InnovationPage() {
                   </div>
                 </div>
 
+                {/* المحتوى المختصر - ✅ padding أصغر للجوال */}
                 <div className="p-4 sm:p-5 md:p-8">
                   <div className={`flex items-center gap-2 sm:gap-3 mb-2 sm:mb-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
                     <div className="w-9 h-9 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/5 rounded-xl flex items-center justify-center shrink-0">
@@ -374,6 +373,7 @@ export default function InnovationPage() {
                     </div>
                   </div>
 
+                  {/* ✅ نص مختصر للجوال فقط (مخفي على الشاشات الكبيرة) */}
                   <p className="text-gray-400 leading-relaxed mb-3 sm:mb-4 text-xs sm:text-sm md:text-base sm:hidden line-clamp-2">
                     {card.desc.substring(0, 100)}...
                   </p>
@@ -396,9 +396,10 @@ export default function InnovationPage() {
                     ))}
                   </div>
 
+                  {/* ✅ رابط اكتشف المزيد المترجم للجوال */}
                   <div className="md:hidden mt-4 pt-3 border-t border-zinc-800/50">
                     <span className={`inline-flex items-center gap-1 text-sm font-bold ${card.iconColor} ${isRTL ? 'flex-row-reverse' : ''}`}>
-                      {t.discoverMore}
+                      {t.discoverMore} {/* ✅ استخدام الترجمة بدلاً من النص الثابت */}
                       <ArrowRight className={`w-4 h-4 transition-transform ${isRTL ? 'rotate-180' : ''}`} />
                     </span>
                   </div>
