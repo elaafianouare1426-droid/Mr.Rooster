@@ -83,7 +83,7 @@ const translations: Record<SupportedLang, Record<string, string>> = {
     eyeFeature1: "Alertes d'urgence intelligentes sur téléphone en cas de variation de température ou d'humidité",
     eyeFeature2: "Protection intelligente contre les pannes de courant et de ventilation",
     eyeFeature3: "Écran OLED pour l'affichage direct des données sur site",
-    linkTitle: "Smart Brooder",
+    linkTitle: "Smart Controller",
     linkSubtitle: "Élevage intelligent",
     linkDesc: "Dispositif de contrôle environnemental intelligent et autonome, conçu pour gérer et prendre soin des poussins de 1 à 30 jours. Il dispose d'un système de courbe de température automatique (Automated Temperature Curve), réduisant progressivement et précisément la température chaque jour (de 37°C dans les premiers jours pour s'adapter à l'immunité faible du poussin, jusqu'à 20°C à la fin de la croissance des plumes au 30ème jour). Le système automatise complètement les facteurs d'élevage critiques (chauffage, ventilation croisée pour prévenir l'accumulation d'ammoniac, régulation de l'humidité), réduisant ainsi le taux de mortalité au minimum et assurant une croissance saine et uniforme.",
     linkFeature1: "Courbe de température automatique (37°C à 20°C) sur 30 jours",
