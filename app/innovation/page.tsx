@@ -144,7 +144,7 @@ const translations: Record<SupportedLang, Record<string, string>> = {
     card2Title: "Emergency Protection",
     card2Desc: "Autonomous safety systems for instant response.",
     sec2Badge: "Smart Brooding",
-    sec2Title1: "Smart Brooder",
+    sec2Title1: "Smart Controller",
     sec2Title2: "Smart Chick Brooding System",
     sec2Desc: "Intelligent environmental control device for raising chicks from day one to day thirty.",
     sec3Title: "Sustainable Environmental Engineering",
